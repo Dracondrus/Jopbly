@@ -1,0 +1,124 @@
+@media (max-width: 992px) {
+  .start__location {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .start__title {
+    font-size: 7.1428571429vw;
+    line-height: 80px;
+    text-align: center;
+  }
+  .start__text {
+    line-height: 80px;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 18px;
+    line-height: 34px;
+  }
+  .header__start {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .start__image {
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 60%;
+  }
+  .header__burger-btn {
+    display: block;
+  }
+  .menu__item:last-child {
+    margin: 0px;
+  }
+  .menu {
+    position: absolute;
+    right: -350px;
+    top: 0;
+    width: 350px;
+    padding: 30px 2px 20px 20px;
+    background-color: rgb(238, 125, 60);
+    visibility: hidden;
+    -webkit-transition: visibility 0.5s, -webkit-transform 0.5s;
+    transition: visibility 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, visibility 0.5s;
+    transition: transform 0.5s, visibility 0.5s, -webkit-transform 0.5s;
+    will-change: transform;
+  }
+  .menu__list {
+    display: block;
+  }
+  .menu__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .menu__link {
+    color: white;
+    font-size: 21px;
+    display: block;
+    padding: 10px;
+  }
+  .header.open .menu {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 768px) {
+  .start__search {
+    margin-bottom: 40px;
+  }
+  .start__location {
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .start__location {
+    margin-bottom: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .start__text {
+    line-height: 25px;
+  }
+  .start__title {
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .menu {
+    position: absolute;
+    right: -300px;
+    top: 0;
+    width: 300px;
+    padding: 30px 2px 20px 20px;
+    background-color: rgb(238, 125, 60);
+    visibility: hidden;
+    -webkit-transition: visibility 0.5s, -webkit-transform 0.5s;
+    transition: visibility 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, visibility 0.5s;
+    transition: transform 0.5s, visibility 0.5s, -webkit-transform 0.5s;
+    will-change: transform;
+  }
+  .start__text {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+  }
+  .start__title {
+    line-height: 40px;
+  }
+  .start__image {
+    width: 65%;
+  }
+}

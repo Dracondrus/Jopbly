@@ -1,0 +1,260 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+}
+
+.body-wraper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    box-shadow: 0px 4px 21px -1px rgba(34, 60, 80, 0.13);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    font-family: 'Perpetua';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 57px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    
+    color: #232443;
+}
+.logo span {
+   color: rgba(238, 79, 60, 1);
+}
+
+.logo__img {
+    width: 200px;
+}
+
+.header__burger-btn {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.header__burger-btn span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    left: 5px;
+    background-color: black;
+    transition: background-color .3s, opacity .3s, transform .5s;
+    will-change: transform;
+}
+
+.header__burger-btn:hover span {
+    background-color: rgb(103, 103, 103);
+}
+
+.header__burger-btn span:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+
+.header__burger-btn span:nth-child(3) {
+    transform: translateY(10px);
+}
+
+
+/* Крестик */
+
+.header.open .header__burger-btn span {
+    background-color: white;
+}
+
+.header.open .header__burger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.header.open .header__burger-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .header__burger-btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__item:last-child {
+    margin: 0 0 0 120px;
+}
+.menu__item {
+    padding-right:  40px;
+}
+.menu__link {
+    font-family: 'Axiforma';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 28px;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #353540;
+transition: all 0.3s ease;
+
+}
+.menu__link:hover {
+    
+    color: #f38c60;
+}
+
+.header-btn {
+    color: #fff;
+    border-radius: 10px;
+    padding: 18px 30px;
+    background-color: rgba(238, 79, 60, 1)
+}
+
+.header__start {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+}
+.start__title {
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 700;
+font-size: 65px;
+line-height: 95px;
+letter-spacing: 0.02em;
+color: #353540;
+}
+.start__text {
+    padding: 30px 0;
+    font-family: 'Axiforma';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 34px;
+
+letter-spacing: 0.02em;
+
+color: #5D5D61;
+}
+
+.start__image {
+    height: auto;
+    width: 80%;
+}
+.start__location {
+    display: flex;
+}
+.header__location {
+    padding: 0 20px;
+}
+.start__location img{
+    position: relative;
+    padding-top: 16px;
+    padding-left: 10px;
+    height: 30px;
+    width: auto;
+}
+.start__location  {
+    display: flex;
+    flex-direction: row;
+}
+.start__location  input{
+    padding: 17px 0px;
+    
+}
+
+button {
+   background-color: #fff;
+   border: none;
+}
+.search {
+    background-color: #f38c60;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 6px;
+}
+input {
+    border: none;
+    outline: none;
+}
+input:focus {
+    
+    border-bottom: 1px solid rgb(255, 111, 0);
+}
+.popular__title {
+    padding-top: 30px;
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 75px;
+/* identical to box height, or 156% */
+
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+}
+.popular__info {
+  
+    background-image: url(../src/bgr-popular.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 380px;
+    margin-bottom: 40px;
+    
+}
+.cards {
+    background: rgba(238, 79, 60, 0.5);
+backdrop-filter: blur(25px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 20px;
+}

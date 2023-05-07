@@ -1,0 +1,111 @@
+@media (max-width: 992px) {
+    .start__location {
+        justify-content: center;
+    }
+    .start__title {
+    font-size: calc(100vw / 14);
+    line-height: 80px;
+    text-align: center;
+
+    }
+    .start__text {
+        line-height: 80px;
+        text-align: center;
+        padding: 30px 0;
+
+    font-size: 18px;
+    line-height: 34px;
+
+    }
+
+
+    .header__start {
+        flex-direction: column;
+    }
+    .start__image {
+        padding-top: 20px;
+        margin: 0 auto;
+        width: 60%;
+    }
+    .header__burger-btn {
+        display: block;
+    }
+    .menu__item:last-child {
+        margin: 0px;
+    }
+
+    
+    .menu {
+        position: absolute;
+        right: -350px;
+        top: 0;
+        width: 350px;
+        padding: 30px 2px 20px 20px;
+        background-color:  rgb(238, 125, 60);
+        visibility: hidden;
+        transition: transform .5s, visibility .5s;
+        will-change: transform;
+    }
+    .menu__list {
+        display: block;
+    }
+    .menu__item:not(:last-child) {
+        margin-right: 0;
+    }
+    .menu__link {
+        color: white;
+        font-size: 21px;
+        display: block;
+        padding: 10px;
+    }
+    .header.open .menu {
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+}
+@media screen and (max-width: 768px) {
+    .start__search {
+        margin-bottom: 40px;
+    }
+
+    .start__location {
+        justify-content: none;
+        align-items: center;
+        flex-direction: column;
+    }
+    .start__location  {
+        margin-bottom: 30px;
+
+        flex-direction: column;
+    }
+    .start__text {
+        line-height: 25px;
+    }
+    .start__title {
+        line-height: 60px;  
+        }
+}
+@media screen and (max-width: 576px) {
+    .menu {
+        position: absolute;
+        right: -300px;
+        top: 0;
+        width: 300px;
+        padding: 30px 2px 20px 20px;
+        background-color:  rgb(238, 125, 60);
+        visibility: hidden;
+        transition: transform .5s, visibility .5s;
+        will-change: transform;
+    }
+    .start__text{
+        margin: 0 auto;
+        width: 70%;
+        text-align: center;
+    }
+    .start__title {
+        line-height: 40px;  
+        }
+    .start__image {
+        width: 65%;
+    }
+}
