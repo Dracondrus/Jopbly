@@ -9,6 +9,15 @@
 }
 
 @media (max-width: 992px) {
+    .footer__links {
+        flex-direction: column;
+        text-align: center;
+
+    
+    }
+    .footer__user {
+        margin-top: 20px;
+    }
     .subscribe__item img {
 
         width: auto;

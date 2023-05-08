@@ -8,6 +8,16 @@
   }
 }
 @media (max-width: 992px) {
+  .footer__links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .footer__user {
+    margin-top: 20px;
+  }
   .subscribe__item img {
     width: auto;
     height: 85%;
