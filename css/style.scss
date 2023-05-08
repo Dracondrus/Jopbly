@@ -396,3 +396,47 @@ color: #FFFFFF;
     width: auto;
     height: 600px;
 }
+
+.slider__items {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.slider__items img {
+    width: auto;
+    height: 280px;
+}
+.subscribe__item {
+    position: relative;
+    text-align: center;
+}
+.subscribe__item img {
+
+    width: auto;
+    height: 400px;
+}
+.subscribe {
+    margin: 20px 0;
+}
+.subscribe__input {
+    position: absolute;
+    top: 50%;
+    left: 33%;
+}
+.subscribe__input a {
+    border-radius: 10px;
+    padding: 10px 14px;
+    background-color: #000101;
+    color: #fff;
+    font-family: 'Axiforma';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+
+letter-spacing: 0.05em;
+}
+.input__text {
+    border-radius: 10px;
+    padding: 10px 20px 10px 10px;
+    transition: all 0.4s ease;
+}
