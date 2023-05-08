@@ -351,3 +351,48 @@ color: #FFFFFF;
 .popular__text-view img {
     margin-bottom: -7px;
 }
+
+.job__title {
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 55px;
+
+
+color: #353540;
+}
+.job__text {
+    margin: 10px 0;
+    font-family: 'Axiforma';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 34px;
+padding-bottom: 20px;
+
+
+color: #5D5D61;
+}
+
+.job__info{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.job__btn a{
+    border-radius: 10px;
+    padding: 16px 20px;
+    background-color: #f38c60;
+
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+
+color: #FFFFFF;
+}
+.job__img img {
+    width: auto;
+    height: 600px;
+}
